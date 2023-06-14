@@ -5,12 +5,12 @@ const users = [{
     },
     {
         id: 2,
-        username: 'jane',
+        username: 'melinda',
         password: 'password2',
     },
     {
         id: 3,
-        username: 'mark',
+        username: 'zuwena',
         password: 'password3',
     },
 ];

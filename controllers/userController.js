@@ -25,7 +25,7 @@ module.exports = {
         // Perform validation checks if needed
         user.username = username;
         user.password = password;
-        res.json({ message: 'User updated successfully' });
+        res.json({ message: 'User was updated successfully' });
     },
 
     deleteUser: (req, res) => {
@@ -35,14 +35,14 @@ module.exports = {
             return res.status(404).json({ message: 'User not found' });
         }
         users.splice(userIndex, 1);
-        res.json({ message: 'User deleted successfully' });
+        res.json({ message: 'User was deleted successfully' });
     },
     registerUser: (req, res) => {
         const { username, password } = req.body;
         // Perform validation checks if needed
         const user = { id: users.length + 1, username, password };
         users.push(user);
-        res.status(201).json({ message: 'User registered successfully' });
+        res.status(201).json({ message: 'User was registered successfully' });
     },
 
     loginUser: (req, res) => {
